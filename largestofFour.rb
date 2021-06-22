@@ -1,3 +1,6 @@
+# Sort an array of arrays
+# Separate the biggest number in each
+# array to a new array
 def largestofFour(arr)
   arr.map { |e| e.sort.last }.sort
 end
