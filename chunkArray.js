@@ -14,5 +14,13 @@ function chunkArrayInGroups2(arr, size) {
     console.log(result);
 }
   
-chunkArrayInGroups(["a", "b", "c", "d"], 3);
-chunkArrayInGroups2(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(["a", "b", "c", "d"], 3); //[ [ 'a', 'b', 'c' ], [ 'd' ] ]
+chunkArrayInGroups(["a", "b", "c", "d"], 2); // [ [ 'a', 'b' ], [ 'c', 'd' ] ]
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2) // [[0, 1], [2, 3], [4, 5]]
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4) // [[0, 1, 2, 3], [4, 5]]
+
+chunkArrayInGroups2(["a", "b", "c", "d"], 3); // [ [ 'a', 'b', 'c' ], [ 'd' ] ]
+chunkArrayInGroups2(["a", "b", "c", "d"], 2); //[ [ 'a', 'b' ], [ 'c', 'd' ] ]
+chunkArrayInGroups2([0, 1, 2, 3, 4, 5], 2) // [[0, 1], [2, 3], [4, 5]]
+chunkArrayInGroups2([0, 1, 2, 3, 4, 5], 4) // [[0, 1, 2, 3], [4, 5]]
+
